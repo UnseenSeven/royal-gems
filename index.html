@@ -6,32 +6,95 @@
     <meta name="description" content="Royal Gems offers a collection of natural gems and treasures recovered from the sea. Discover rubies, emeralds, sapphires, and more.">
     <meta name="keywords" content="gems, treasures, rubies, emeralds, sapphires, aquamarine, rubellite, golden beryl, sea treasures">
     <title>Royal Gems</title>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@700&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header class="hero">
+        <div class="overlay"></div>
         <h1>Royal Gems</h1>
         <p>Discover the finest natural gems and treasures lost at sea.</p>
+        <a href="#gems" class="cta-button">Explore Our Treasures</a>
     </header>
     <nav>
         <ul>
-            <li><a href="gems/rubies.html">Rubies</a></li>
-            <li><a href="gems/emeralds.html">Emeralds</a></li>
-            <li><a href="gems/sapphires.html">Sapphires</a></li>
-            <li><a href="gems/aquamarine.html">Aquamarine</a></li>
-            <li><a href="gems/rubellite.html">Rubellite</a></li>
-            <li><a href="gems/golden-beryl.html">Golden Beryl</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#rubies">Rubies</a></li>
+            <li><a href="#emeralds">Emeralds</a></li>
+            <li><a href="#sapphires">Sapphires</a></li>
+            <li><a href="#aquamarine">Aquamarine</a></li>
+            <li><a href="#rubellite">Rubellite</a></li>
+            <li><a href="#golden-beryl">Golden Beryl</a></li>
+            <li><a href="#gold">Gold Treasures</a></li>
         </ul>
     </nav>
     <main>
-        <section>
-            <h2>Welcome to Royal Gems</h2>
-            <p>Explore our collection of exquisite gems recovered from the depths of the ocean. Each piece tells a story of adventure and discovery.</p>
-            <a href="#gems" class="cta-button">Discover Our Gems</a>
+        <section id="about">
+            <h2>Our Story</h2>
+            <p>Royal Gems was founded by @TheKingofJewelz and his late father, D'Angelo Jackson, aka Action Jackson. Together, they embarked on numerous treasure hunting adventures, discovering and preserving historic treasures from the depths of the ocean.</p>
+        </section>
+        <section id="rubies" class="gem-section">
+            <div class="gem-image ruby">Ruby Image</div>
+            <div class="gem-description">
+                <h2>Rubies</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </section>
+        <section id="emeralds" class="gem-section">
+            <div class="gem-image emerald">Emerald Image</div>
+            <div class="gem-description">
+                <h2>Emeralds</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </section>
+        <section id="sapphires" class="gem-section">
+            <div class="gem-image sapphire">Sapphire Image</div>
+            <div class="gem-description">
+                <h2>Sapphires</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </section>
+        <section id="aquamarine" class="gem-section">
+            <div class="gem-image aquamarine">Aquamarine Image</div>
+            <div class="gem-description">
+                <h2>Aquamarine</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </section>
+        <section id="rubellite" class="gem-section">
+            <div class="gem-image rubellite">Rubellite Image</div>
+            <div class="gem-description">
+                <h2>Rubellite</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </section>
+        <section id="golden-beryl" class="gem-section">
+            <div class="gem-image golden-beryl">Golden Beryl Image</div>
+            <div class="gem-description">
+                <h2>Golden Beryl</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </section>
+        <section id="gold" class="gem-section">
+            <div class="gem-image gold">Gold Image</div>
+            <div class="gem-description">
+                <h2>Gold Treasures</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
         </section>
     </main>
     <footer>
         <p>Contact us: <a href="mailto:officialroyalgems@gmail.com">officialroyalgems@gmail.com</a> | Follow us on <a href="https://x.com/TheKingofJewelz">@TheKingofJewelz</a></p>
     </footer>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
