@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Royal Gems offers a collection of natural gems and treasures recovered from the sea. Discover rubies, emeralds, jewels, and more.">
-    <meta name="keywords" content="gems, treasures, rubies, emeralds, jewels, aquamarine, rubellite, gold in quartz, pearls, sea treasures">
+    <meta name="keywords" content="gems, treasures, rubies, emeralds, jewels, aquamarine, rubellite, gold in quartz, pearls, sea treasures, ocean-polished gems, natural sea treasures">
     <title>Royal Gems</title>
     <link href="https://fonts.googleapis.com/css2?family=Exo:wght@700&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
@@ -16,13 +16,26 @@
         Your browser does not support the audio element.
     </audio>
 
-    <!-- Hero Section -->
+    <!-- Hero Section with Carousel -->
     <header class="hero">
-        <h1>Royal Gems</h1>
-        <p>Discover the finest natural gems and treasures lost at sea.</p>
-        <div class="button-container">
-            <a href="#gems" class="cta-button">Explore Our Treasures</a>
-            <a href="https://www.ebay.com/usr/arkangeltreasure" class="buy-button" target="_blank">Visit Our eBay Store</a>
+        <div class="carousel">
+            <div class="slides">
+                <div class="slide" style="background-image: url('imagine/slide1.jpg')"></div>
+                <div class="slide" style="background-image: url('imagine/slide2.jpg')"></div>
+                <div class="slide" style="background-image: url('imagine/slide3.jpg')"></div>
+            </div>
+            <button class="prev" aria-label="Previous Slide">❮</button>
+            <button class="next" aria-label="Next Slide">❯</button>
+            <div class="indicators"></div>
+        </div>
+        <div class="hero-content">
+            <h1>Royal Gems</h1>
+            <p>Discover the finest natural gems and treasures lost at sea.</p>
+            <div class="button-container">
+                <a href="#gems" class="cta-button">Explore Our Treasures</a>
+                <a href="https://www.ebay.com/usr/arkangeltreasure" class="buy-button" target="_blank">Visit Our eBay Store</a>
+                <a href="mailto:officialroyalgems@gmail.com?subject=Inquiry%20About%20Buying%20Gems" class="inquire-button">Inquire About Buying</a>
+            </div>
         </div>
     </header>
 
@@ -30,13 +43,11 @@
     <nav>
         <ul>
             <li><a href="#about">About Us</a></li>
-            <li><a href="#rubies">Rubies</a></li>
-            <li><a href="#emeralds">Emeralds</a></li>
-            <li><a href="#jewels">Jewels</a></li>
-            <li><a href="#aquamarine">Aquamarine</a></li>
-            <li><a href="#rubellite">Rubellite</a></li>
-            <li><a href="#gold-in-quartz">Gold in Quartz</a></li>
-            <li><a href="#pearls">Pearls</a></li>
+            <li><a href="#treasure-map">Treasure Map</a></li>
+            <li><a href="#gems">Gems</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#newsletter">Newsletter</a></li>
         </ul>
     </nav>
 
@@ -53,60 +64,113 @@
             <p>Though D’Angelo has now passed, his spirit shines in every treasure they uncovered. Today, as <strong>@TheKingofJewelz</strong> showcases these gems, he honors his father’s legacy—a legacy not just of riches, but of courage, friendship, and an unbreakable bond. And so, the legend of <strong>@TheKingofJewelz and Action Jackson</strong> grows, their epic finds echoing through time, a beacon for all who dare to dream of treasures lost and found, and a tribute to a love that will never fade.</p>
         </section>
 
-        <section id="rubies" class="gem-section">
-            <img src="images/rubies.jpg" alt="Rubies" class="gem-image">
-            <div class="gem-description">
-                <h2>Rubies</h2>
-                <p>A ruby blazes within the hoard, its passionate red core pulsing like a heartbeat trapped in stone. Cast into the sea centuries ago, it was tumbled by the waves, its surface polished to a silken sheen by the ocean’s relentless dance. This natural gem bears an old mine cut, its facets uneven yet radiant, carved by artisans long forgotten. Free of radiation, its fiery hue is untarnished, a testament to its pristine origins. Conflict-free, it carries no blood but the salt of the sea, its value soaring as a relic of lost treasure. Rough yet faceted, it embodies raw power and refined grace, a jewel that commands awe and reverence.</p>
-            </div>
+        <section id="treasure-map">
+            <h2>Explore Our Treasure Map</h2>
+            <img src="imagine/treasure-map.jpg" alt="Interactive Treasure Map" usemap="#treasure-map">
+            <map name="treasure-map">
+                <area shape="rect" coords="100,100,200,200" href="#rubies" alt="Rubies">
+                <area shape="rect" coords="300,300,400,400" href="#emeralds" alt="Emeralds">
+                <!-- Add more areas as needed -->
+            </map>
         </section>
 
-        <section id="emeralds" class="gem-section">
-            <img src="images/emeralds.jpg" alt="Emeralds" class="gem-image">
-            <div class="gem-description">
-                <h2>Emeralds</h2>
-                <p>Nestled within the treasure chest, an emerald gleams with a verdant splendor, its deep green hue mirroring the ocean’s abyss. Lost at sea for centuries, this gem was sculpted by the waves, its rough edges softened into a natural masterpiece. Its old mine cut, a relic of ancient craftsmanship, reveals irregular facets hand-hewn in a time before machines—each angle a whisper of the past. Polished by the sea’s tender currents, it glows with a purity unmarred by radiation, its color a gift of nature alone. Conflict-free, its origins are a mystery woven into the tides, a treasure born of the earth and refined by the deep. Valued for its rarity and organic beauty, this emerald is both rough and faceted, a living paradox of wild elegance.</p>
-            </div>
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Search for gems...">
+        </div>
+
+        <section id="gems">
+            <section id="rubies" class="gem-section">
+                <img src="imagine/rubies.jpg" alt="Ocean-Polished Rubies" class="gem-image">
+                <div class="gem-description">
+                    <h2>Rubies</h2>
+                    <p>A ruby blazes within the hoard, its passionate red core pulsing like a heartbeat trapped in stone. Cast into the sea centuries ago, it was tumbled by the waves, its surface polished to a silken sheen by the ocean’s relentless dance. This natural gem bears an old mine cut, its facets uneven yet radiant, carved by artisans long forgotten. Free of radiation, its fiery hue is untarnished, a testament to its pristine origins. Conflict-free, it carries no blood but the salt of the sea, its value soaring as a relic of lost treasure. Rough yet faceted, it embodies raw power and refined grace, a jewel that commands awe and reverence.</p>
+                </div>
+            </section>
+
+            <section id="emeralds" class="gem-section">
+                <img src="imagine/emeralds.jpg" alt="Ocean-Polished Emeralds" class="gem-image">
+                <div class="gem-description">
+                    <h2>Emeralds</h2>
+                    <p>Nestled within the treasure chest, an emerald gleams with a verdant splendor, its deep green hue mirroring the ocean’s abyss. Lost at sea for centuries, this gem was sculpted by the waves, its rough edges softened into a natural masterpiece. Its old mine cut, a relic of ancient craftsmanship, reveals irregular facets hand-hewn in a time before machines—each angle a whisper of the past. Polished by the sea’s tender currents, it glows with a purity unmarred by radiation, its color a gift of nature alone. Conflict-free, its origins are a mystery woven into the tides, a treasure born of the earth and refined by the deep. Valued for its rarity and organic beauty, this emerald is both rough and faceted, a living paradox of wild elegance.</p>
+                </div>
+            </section>
+
+            <section id="jewels" class="gem-section">
+                <img src="imagine/jewels.jpg" alt="Assorted Sea-Recovered Jewels" class="gem-image">
+                <div class="gem-description">
+                    <h2>Jewels</h2>
+                    <p>In the dark, silent depths of the ocean, where shipwrecks cradle the secrets of the past, a sunken treasure chest has been uncovered, its lid creaking open to reveal a dazzling array of high jewelry. These exquisite pieces, lost to the sea for centuries, shimmer with the brilliance of a forgotten era, their beauty untouched by time. Each item tells a tale of its own—of royalty, ambition, and adventure—brought back to life from the watery abyss.</p>
+                </div>
+            </section>
+
+            <section id="aquamarine" class="gem-section">
+                <img src="imagine/aquamarine.jpg" alt="Ocean-Polished Aquamarine" class="gem-image">
+                <div class="gem-description">
+                    <h2>Aquamarine</h2>
+                    <p>Amidst the treasure's gleam, an aquamarine rests like a fragment of the sea itself, its tranquil blue depths mirroring the ocean's serene heart. Lost to the waves for centuries, this gem was cradled by the currents, its surface polished to a gentle luster by the sea's eternal caress. Bearing an old mine cut, its facets are a testament to ancient artistry, each angle hand-carved in a time when gems were shaped by patient hands, not machines. Natural and unaltered, its color remains a pure gift of the earth, free from radiation's touch. Conflict-free, it carries the peace of the deep, its value woven into its rarity and the mystery of its journey. Both rough and faceted, this aquamarine embodies the sea's duality—wild yet graceful, a timeless echo of the ocean's soul.</p>
+                </div>
+            </section>
+
+            <section id="rubellite" class="gem-section">
+                <img src="imagine/rubellite.jpg" alt="Ocean-Polished Rubellite" class="gem-image">
+                <div class="gem-description">
+                    <h2>Rubellite</h2>
+                    <p>A rubellite blazes within the chest, its fiery red heart pulsing like a beacon in the dark. Cast into the sea ages ago, it was tumbled by the waves, its surface smoothed to a silken glow by the ocean's relentless rhythm. This natural treasure bears an old mine cut, its facets irregular yet radiant, a hallmark of artisans whose skills are now but whispers in time. Free of radiation, its vibrant hue is unspoiled, a pure expression of the earth's fiery core. Conflict-free, it bears no mark but the salt of the sea, its value soaring as a relic of lost splendor. Rough yet refined, it captures the essence of passion and power, a gem that commands reverence.</p>
+                </div>
+            </section>
+
+            <section id="gold-in-quartz" class="gem-section">
+                <img src="imagine/gold-in-quartz.jpg" alt="Natural Gold in Quartz" class="gem-image">
+                <div class="gem-description">
+                    <h2>Gold in Quartz</h2>
+                    <p>Among the riches trouverez a marvel of nature: gold entwined with quartz, a union of earth's most coveted treasures. Lost to the sea for centuries, this specimen was bathed in the ocean's embrace, its quartz crystal polished to a glassy sheen while veins of gold gleam like sunlight trapped in stone. Natural and untouched, it bears no mark of human alteration, its beauty a pure gift of the deep. Conflict-free, its origins are woven into the tides, a treasure born of the earth and refined by the sea. Valued for its rarity and the story it tells, this gold in quartz is a testament to nature's artistry, a relic that bridges the wild and the sublime.</p>
+                </div>
+            </section>
+
+            <section id="pearls" class="gem-section">
+                <img src="imagine/pearls.jpg" alt="South Sea Pearls" class="gem-image">
+                <div class="gem-description">
+                    <h2>Pearls</h2>
+                    <p>Resting within the chest, a South Sea pearl glows with an ethereal light, its lustrous surface a mirror to the sun's own warmth. Lost to the depths for ages, it was nurtured by the sea, its nacre thickened by the ocean's patient hand, growing in size and splendor. Natural and unaltered, this pearl bears no trace of human interference, its rare golden hue a gift of the deep. Conflict-free, it carries the serenity of the tides, its value magnified by its size and the perfection of its form. Both rough in its organic origin and refined in its beauty, this South Sea pearl is a timeless treasure, a whisper of the sea's eternal grace.</p>
+                </div>
+            </section>
         </section>
 
-        <section id="jewels" class="gem-section">
-            <img src="images/jewels.jpg" alt="Jewels" class="gem-image">
-            <div class="gem-description">
-                <h2>Jewels</h2>
-                <p>In the dark, silent depths of the ocean, where shipwrecks cradle the secrets of the past, a sunken treasure chest has been uncovered, its lid creaking open to reveal a dazzling array of high jewelry. These exquisite pieces, lost to the sea for centuries, shimmer with the brilliance of a forgotten era, their beauty untouched by time. Each item tells a tale of its own—of royalty, ambition, and adventure—brought back to life from the watery abyss.</p>
-            </div>
+        <section id="blog">
+            <h2>Our Blog</h2>
+            <article>
+                <h3>Adventure Awaits: Our Latest Treasure Hunt</h3>
+                <p>Join us as we recount our most recent expedition to uncover hidden gems...</p>
+                <a href="#">Read More</a>
+            </article>
+            <article>
+                <h3>The Art of Gemology: Understanding Ocean-Polished Stones</h3>
+                <p>Learn about the unique characteristics of gems shaped by the sea...</p>
+                <a href="#">Read More</a>
+            </article>
+            <!-- Add more articles as needed -->
         </section>
 
-        <section id="aquamarine" class="gem-section">
-            <img src="images/aquamarine.jpg" alt="Aquamarine" class="gem-image">
-            <div class="gem-description">
-                <h2>Aquamarine</h2>
-                <p>Amidst the treasure's gleam, an aquamarine rests like a fragment of the sea itself, its tranquil blue depths mirroring the ocean's serene heart. Lost to the waves for centuries, this gem was cradled by the currents, its surface polished to a gentle luster by the sea's eternal caress. Bearing an old mine cut, its facets are a testament to ancient artistry, each angle hand-carved in a time when gems were shaped by patient hands, not machines. Natural and unaltered, its color remains a pure gift of the earth, free from radiation's touch. Conflict-free, it carries the peace of the deep, its value woven into its rarity and the mystery of its journey. Both rough and faceted, this aquamarine embodies the sea's duality—wild yet graceful, a timeless echo of the ocean's soul.</p>
-            </div>
+        <section id="testimonials">
+            <h2>What Our Customers Say</h2>
+            <blockquote>
+                <p>"Royal Gems provided me with a stunning ruby that feels like it has a story to tell. Truly a treasure!"</p>
+                <cite>— Jane D.</cite>
+            </blockquote>
+            <blockquote>
+                <p>"The emerald I purchased is beyond beautiful. It's clear that these gems are handled with care and reverence."</p>
+                <cite>— Mark S.</cite>
+            </blockquote>
+            <!-- Add more testimonials as needed -->
         </section>
 
-        <section id="rubellite" class="gem-section">
-            <img src="images/rubellite.jpg" alt="Rubellite" class="gem-image">
-            <div class="gem-description">
-                <h2>Rubellite</h2>
-                <p>A rubellite blazes within the chest, its fiery red heart pulsing like a beacon in the dark. Cast into the sea ages ago, it was tumbled by the waves, its surface smoothed to a silken glow by the ocean's relentless rhythm. This natural treasure bears an old mine cut, its facets irregular yet radiant, a hallmark of artisans whose skills are now but whispers in time. Free of radiation, its vibrant hue is unspoiled, a pure expression of the earth's fiery core. Conflict-free, it bears no mark but the salt of the sea, its value soaring as a relic of lost splendor. Rough yet refined, it captures the essence of passion and power, a gem that commands reverence.</p>
-            </div>
-        </section>
-
-        <section id="gold-in-quartz" class="gem-section">
-            <img src="images/gold-in-quartz.jpg" alt="Gold in Quartz" class="gem-image">
-            <div class="gem-description">
-                <h2>Gold in Quartz</h2>
-                <p>Among the riches lies a marvel of nature: gold entwined with quartz, a union of earth's most coveted treasures. Lost to the sea for centuries, this specimen was bathed in the ocean's embrace, its quartz crystal polished to a glassy sheen while veins of gold gleam like sunlight trapped in stone. Natural and untouched, it bears no mark of human alteration, its beauty a pure gift of the deep. Conflict-free, its origins are woven into the tides, a treasure born of the earth and refined by the sea. Valued for its rarity and the story it tells, this gold in quartz is a testament to nature's artistry, a relic that bridges the wild and the sublime.</p>
-            </div>
-        </section>
-
-        <section id="pearls" class="gem-section">
-            <img src="images/pearls.jpg" alt="Pearls" class="gem-image">
-            <div class="gem-description">
-                <h2>Pearls</h2>
-                <p>Resting within the chest, a South Sea pearl glows with an ethereal light, its lustrous surface a mirror to the sun's own warmth. Lost to the depths for ages, it was nurtured by the sea, its nacre thickened by the ocean's patient hand, growing in size and splendor. Natural and unaltered, this pearl bears no trace of human interference, its rare golden hue a gift of the deep. Conflict-free, it carries the serenity of the tides, its value magnified by its size and the perfection of its form. Both rough in its organic origin and refined in its beauty, this South Sea pearl is a timeless treasure, a whisper of the sea's eternal grace.</p>
-            </div>
+        <section id="newsletter">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter for the latest finds and stories.</p>
+            <form action="#" method="post">
+                <input type="email" name="email" placeholder="Your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
         </section>
     </main>
 
@@ -115,14 +179,106 @@
         <p>Contact us: <a href="mailto:officialroyalgems@gmail.com">officialroyalgems@gmail.com</a> | Follow us on <a href="https://x.com/TheKingofJewelz">@TheKingofJewelz</a></p>
     </footer>
 
-    <!-- Smooth Scrolling Script -->
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="caption"></div>
+    </div>
+
+    <!-- JavaScript -->
     <script>
+        // Carousel Functionality
+        const slides = document.querySelector('.slides');
+        const slideElements = document.querySelectorAll('.slide');
+        const prevButton = document.querySelector('.prev');
+        const nextButton = document.querySelector('.next');
+        const indicatorsContainer = document.querySelector('.indicators');
+        let currentIndex = 0;
+        const totalSlides = slideElements.length;
+
+        // Dynamically create indicators
+        slideElements.forEach((_, index) => {
+            const indicator = document.createElement('span');
+            indicator.classList.add('indicator');
+            if (index === 0) indicator.classList.add('active');
+            indicator.setAttribute('aria-label', `Go to slide ${index + 1}`);
+            indicator.addEventListener('click', () => showSlide(index));
+            indicatorsContainer.appendChild(indicator);
+        });
+        const indicators = document.querySelectorAll('.indicator');
+
+        // Function to show the current slide
+        function showSlide(index) {
+            if (index >= totalSlides) index = 0;
+            if (index < 0) index = totalSlides - 1;
+            slides.style.transform = `translateX(-${index * 100}%)`;
+            indicators.forEach((indicator, i) => {
+                indicator.classList.toggle('active', i === index);
+            });
+            currentIndex = index;
+        }
+
+        // Navigation button events
+        prevButton.addEventListener('click', () => showSlide(currentIndex - 1));
+        nextButton.addEventListener('click', () => showSlide(currentIndex + 1));
+
+        // Auto-play functionality
+        let autoPlayInterval = setInterval(() => showSlide(currentIndex + 1), 5000);
+
+        // Pause auto-play on hover
+        const carousel = document.querySelector('.carousel');
+        carousel.addEventListener('mouseenter', () => clearInterval(autoPlayInterval));
+        carousel.addEventListener('mouseleave', () => {
+            autoPlayInterval = setInterval(() => showSlide(currentIndex + 1), 5000);
+        });
+
+        // Smooth scrolling for navigation
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
                 });
+            });
+        });
+
+        // Lightbox Functionality
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const captionText = document.getElementById('caption');
+        const closeBtn = document.querySelector('.close');
+
+        document.querySelectorAll('.gem-image').forEach(img => {
+            img.addEventListener('click', function() {
+                lightbox.style.display = 'block';
+                lightboxImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            });
+        });
+
+        closeBtn.addEventListener('click', function() {
+            lightbox.style.display = 'none';
+        });
+
+        lightbox.addEventListener('click', function(e) {
+            if (e.target !== lightboxImg) {
+                lightbox.style.display = 'none';
+            }
+        });
+
+        // Search Functionality
+        const searchInput = document.getElementById('search');
+        searchInput.addEventListener('input', function() {
+            const filter = this.value.toLowerCase();
+            document.querySelectorAll('.gem-section').forEach(section => {
+                const title = section.querySelector('h2').textContent.toLowerCase();
+                const description = section.querySelector('p').textContent.toLowerCase();
+                if (title.includes(filter) || description.includes(filter)) {
+                    section.style.display = '';
+                } else {
+                    section.style.display = 'none';
+                }
             });
         });
     </script>
