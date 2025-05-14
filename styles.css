@@ -58,6 +58,7 @@ body {
     padding: 10px;
     cursor: pointer;
     font-size: 24px;
+    z-index: 200; /* Ensure arrows are above other elements */
 }
 
 .prev {
@@ -431,5 +432,11 @@ footer a:hover {
 
     #search {
         width: 80%;
+    }
+
+    /* Adjust carousel arrows for mobile */
+    .prev, .next {
+        font-size: 3em; /* Larger size for mobile */
+        top: 60%; /* Move arrows lower to avoid navigation bar */
     }
 }
