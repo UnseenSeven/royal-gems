@@ -1,27 +1,12 @@
 /* styles.css */
 
-/* Reset default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body with Aqua Blue Gradient */
+/* General Body Styling */
 body {
     font-family: 'Roboto', sans-serif;
     background: linear-gradient(to bottom, #00CED1, #20B2AA); /* Aqua blue gradient */
-    color: #f0f0f0;
+    color: #f0f0f0; /* Cream text */
     margin: 0;
     padding: 0;
-}
-
-/* Main Content with Padding */
-main {
-    padding: 20px;
-    max-width: 1200px; /* Ensures content doesn't stretch too wide */
-    margin: 0 auto;
-    text-align: center;
 }
 
 /* Headers */
@@ -30,31 +15,36 @@ h1, h2, h3 {
     color: #FFD700; /* Gold */
 }
 
+p {
+    font-size: 1.2em;
+}
+
 /* Navigation Bar */
 nav {
     background-color: #191970; /* Midnight Blue */
     padding: 10px 0;
-    text-align: center;
 }
 
 nav ul {
     list-style: none;
+    margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
-nav ul li {
-    display: inline;
+nav li {
     margin: 0 15px;
 }
 
-nav ul li a {
-    color: #FFD700;
+nav a {
+    color: #FFD700; /* Gold text */
     text-decoration: none;
     font-size: 1.1em;
 }
 
-nav ul li a:hover {
-    color: #FFC700;
+nav a:hover {
+    color: #FFC700; /* Lighter gold on hover */
 }
 
 /* Hero Section */
@@ -64,23 +54,18 @@ nav ul li a:hover {
     padding: 50px 20px;
 }
 
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    margin: 0;
+}
+
 .hero-content {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
-}
-
-.hero-content h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 3em;
-    margin: 0;
-}
-
-.hero-content p {
-    font-size: 1.5em;
-    margin: 10px 0;
 }
 
 /* Carousel */
@@ -102,8 +87,8 @@ nav ul li a:hover {
 }
 
 .prev, .next {
-    background-color: rgba(25, 25, 112, 0.5); /* Semi-transparent Midnight Blue */
-    color: #FFD700;
+    color: #FFD700; /* Gold */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -130,14 +115,14 @@ nav ul li a:hover {
 .indicator {
     width: 10px;
     height: 10px;
-    background-color: #f0f0f0;
+    background-color: #f0f0f0; /* Cream */
     border-radius: 50%;
     margin: 0 5px;
     cursor: pointer;
 }
 
 .indicator.active {
-    background-color: #FFD700;
+    background-color: #C8b273; /* Gold */
 }
 
 /* Buttons */
@@ -149,29 +134,29 @@ nav ul li a:hover {
 }
 
 .cta-button, .buy-button, .inquire-button {
-    background-color: #FFD700; /* Gold background */
-    color: #191970; /* Midnight Blue text */
-    padding: 10px 20px;
+    background-color: #C8b273; /* Gold */
+    color: #191970; /* Midnight Blue */
+    padding: 12px 24px;
     border: none;
     border-radius: 5px;
     text-decoration: none;
     font-size: 1.2em;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .cta-button:hover, .buy-button:hover, .inquire-button:hover {
-    background-color: #FFC700; /* Lighter gold on hover */
+    box-shadow: 0 0 10px rgba(200, 178, 115, 0.8); /* Gold glow */
     transform: scale(1.05);
 }
 
 /* Gem Sections */
 .gem-section {
-    border: 1px solid #FFD700; /* Gold border */
+    border: 1px solid #C8b273; /* Gold border */
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 40px;
-    background-color: rgba(25, 25, 112, 0.2); /* Subtle Midnight Blue tint */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.2); /* Subtle dark tint */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
     display: flex;
     align-items: center;
     gap: 20px;
@@ -188,7 +173,7 @@ nav ul li a:hover {
 
 /* Blog, Testimonials, Newsletter Sections */
 #blog, #testimonials, #newsletter {
-    background-color: rgba(25, 25, 112, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 40px;
@@ -228,9 +213,9 @@ footer a:hover {
 }
 
 .search-container input {
-    background-color: #f0f0f0;
+    background-color: #fff;
     color: #191970;
-    border: 1px solid #FFD700;
+    border: 1px solid #C8b273;
     padding: 10px;
     border-radius: 5px;
     width: 50%;
@@ -240,7 +225,7 @@ footer a:hover {
 /* Audio Player */
 .audio-player {
     background-color: #191970;
-    border: 1px solid #FFD700;
+    border: 1px solid #C8b273;
     display: block;
     margin: 10px auto;
     padding: 5px;
@@ -249,7 +234,7 @@ footer a:hover {
 
 /* Lightbox */
 .lightbox {
-    background-color: rgba(25, 25, 112, 0.9);
+    background-color: rgba(0, 0, 0, 0.8);
     position: fixed;
     top: 0;
     left: 0;
@@ -289,16 +274,16 @@ footer a:hover {
 }
 
 #newsletter input[type="email"] {
-    background-color: #f0f0f0;
+    background-color: #fff;
     color: #191970;
-    border: 1px solid #FFD700;
+    border: 1px solid #C8b273;
     padding: 10px;
     border-radius: 5px;
     width: 200px;
 }
 
 #newsletter button {
-    background-color: #FFD700;
+    background-color: #C8b273;
     color: #191970;
     padding: 10px 20px;
     border: none;
@@ -308,5 +293,5 @@ footer a:hover {
 }
 
 #newsletter button:hover {
-    background-color: #FFC700;
+    box-shadow: 0 0 10px rgba(200, 178, 115, 0.8);
 }
