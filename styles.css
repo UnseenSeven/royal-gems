@@ -27,8 +27,10 @@ h1, h2, h3 {
 .logo-text {
     font-size: 3em;
     font-weight: bold;
-    color: #c8b273; /* Gold */
-    text-shadow: 0 0 10px rgba(127, 255, 212, 0.5), 0 0 20px rgba(127, 255, 212, 0.3);
+    background: linear-gradient(to bottom, #7FFFD4, #0F52BA); /* Same gradient as background */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 10px rgba(127, 255, 212, 0.5), 0 0 20px rgba(127, 255, 212, 0.3); /* Aquamarine glow */
     margin-bottom: 20px;
 }
 
