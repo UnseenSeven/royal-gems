@@ -12,83 +12,140 @@ body {
     line-height: 1.6;
 }
 
-/* Header */
+/* Headers */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #DAA520; /* Rich gold */
+    text-shadow: 0 0 10px rgba(64, 224, 208, 0.5); /* Aquamarine glow */
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Hero Section */
 .hero {
     position: relative;
     text-align: center;
     padding: 100px 20px;
-    background: url('images/hero-bg.jpg') no-repeat center/cover;
 }
 
-.overlay {
+.carousel {
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+
+.prev, .next {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #DAA520; /* Gold */
+    font-size: 2em;
+    cursor: pointer;
 }
 
-h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 4rem;
-    font-weight: bold;
-    text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
-    position: relative;
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.indicator.active {
+    background-color: #DAA520; /* Gold */
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
     z-index: 1;
 }
 
-.hero p {
-    font-size: 1.5rem;
-    margin: 20px 0;
-    position: relative;
-    z-index: 1;
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
 }
 
-.cta-button {
-    display: inline-block;
-    padding: 15px 30px;
-    background: #ffd700;
-    color: #000;
+.cta-button, .buy-button, .inquire-button {
+    background-color: #40E0D0; /* Aqua blue */
+    color: #DAA520; /* Gold */
+    padding: 10px 20px;
     text-decoration: none;
-    font-weight: bold;
     border-radius: 5px;
-    box-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
-    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(64, 224, 208, 0.5); /* Aquamarine glow */
+    transition: box-shadow 0.3s ease;
 }
 
-.cta-button:hover {
-    background: #fff;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
+.cta-button:hover, .buy-button:hover, .inquire-button:hover {
+    box-shadow: 0 0 15px rgba(64, 224, 208, 0.8);
 }
 
 /* Navigation */
 nav {
-    background: #1a1a1a;
-    padding: 15px 0;
-    text-align: center;
+    background-color: #111;
+    padding: 10px 0;
 }
 
 nav ul {
     list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
+nav a {
+    color: #DAA520; /* Gold */
     text-decoration: none;
     font-family: 'Playfair Display', serif;
-    font-size: 1.2rem;
-    text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
-    transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
-    color: #ffd700;
+nav a:hover {
+    text-shadow: 0 0 5px #DAA520;
 }
 
 /* Main Content */
@@ -96,81 +153,58 @@ main {
     padding: 40px 20px;
 }
 
-h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
-    margin-bottom: 20px;
-}
-
 .gem-section {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
     margin: 40px 0;
+    padding: 20px;
+    background-color: #111;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(64, 224, 208, 0.3); /* Aquamarine glow */
+    display: flex;
+    align-items: center;
     gap: 20px;
 }
 
 .gem-image {
-    max-width: 100%;
+    max-width: 300px;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+    box-shadow: 0 0 10px rgba(64, 224, 208, 0.5); /* Aquamarine glow */
 }
 
 .gem-description {
     flex: 1;
-    min-width: 300px;
 }
 
 /* Footer */
 footer {
-    text-align: center;
+    background-color: #111;
     padding: 20px;
-    background: #1a1a1a;
+    text-align: center;
 }
 
 footer a {
-    color: #ffd700;
+    color: #DAA520; /* Gold */
     text-decoration: none;
 }
 
 footer a:hover {
-    text-decoration: underline;
+    text-shadow: 0 0 5px #DAA520;
 }
 
 /* Responsiveness */
 @media (max-width: 768px) {
     h1 {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
-
-    .hero p {
-        font-size: 1.2rem;
+    h2 {
+        font-size: 2rem;
     }
-
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
     .gem-section {
         flex-direction: column;
         text-align: center;
     }
-}
-
-@media (max-width: 480px) {
-    h1 {
-        font-size: 2rem;
-    }
-
-    h2 {
-        font-size: 1.8rem;
-    }
-
-    .cta-button {
-        padding: 10px 20px;
+    .button-container {
+        flex-direction: column;
+        gap: 10px;
     }
 }
