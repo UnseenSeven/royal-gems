@@ -1,3 +1,6 @@
+/* styles.css */
+
+/* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -5,24 +8,35 @@
 }
 
 body {
-    font-family: Roboto, sans-serif;
-    background: linear-gradient(to bottom, #7FFFD4, #0F52BA);
-    color: #f0f0f0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom, #7FFFD4, #0F52BA); /* Aquamarine to sapphire blue */
+    color: #f0f0f0; /* Cream text for readability */
     margin: 0;
     padding: 0;
 }
 
+/* Headers */
 h1, h2, h3 {
-    font-family: Playfair Display, serif;
-    color: #c8b273;
-    text-shadow: 0 0 10px rgba(127, 255, 212, 0.5),
+    font-family: 'Playfair Display', serif;
+    color: #c8b273; /* Gold */
+    text-shadow: 0 0 10px rgba(127, 255, 212, 0.5), /* Aquamarine glow */
                  0 0 20px rgba(127, 255, 212, 0.3);
 }
 
+/* Logo Text */
+.logo-text {
+    font-size: 3em;
+    font-weight: bold;
+    color: #c8b273; /* Gold */
+    text-shadow: 0 0 10px rgba(127, 255, 212, 0.5), 0 0 20px rgba(127, 255, 212, 0.3);
+    margin-bottom: 20px;
+}
+
+/* Navigation Bar */
 nav {
-    background: linear-gradient(to bottom, #8FFFE0, #1A6BBF);
+    background: linear-gradient(to bottom, #8FFFE0, #1A6BBF); /* Lighter aquamarine to mid-tone blue */
     padding: 10px 0;
-    box-shadow: 0 0 15px rgba(127, 255, 212, 0.5);
+    box-shadow: 0 0 15px rgba(127, 255, 212, 0.5); /* Aquamarine glow */
     position: sticky;
     top: 0;
     z-index: 100;
@@ -37,22 +51,23 @@ nav ul {
 }
 
 nav a {
-    color: #c8b273;
+    color: #c8b273; /* Gold */
     text-decoration: none;
     font-size: 1.1em;
     transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 nav a:hover {
-    color: #d4c68a;
-    text-shadow: 0 0 5px #c8b273;
+    color: #d4c68a; /* Lighter gold */
+    text-shadow: 0 0 5px #c8b273; /* Subtle glow */
 }
 
+/* Hero Section */
 .hero {
     position: relative;
     text-align: center;
     padding: 50px 20px;
-    box-shadow: 0 0 20px rgba(127, 255, 212, 0.5);
+    box-shadow: 0 0 20px rgba(127, 255, 212, 0.5); /* Aquamarine glow */
 }
 
 .carousel {
@@ -73,7 +88,7 @@ nav a:hover {
 }
 
 .prev, .next {
-    color: #c8b273;
+    color: #c8b273; /* Gold */
     background-color: rgba(0, 0, 0, 0.5);
     border: none;
     padding: 10px;
@@ -108,9 +123,10 @@ nav a:hover {
 }
 
 .indicator.active {
-    background-color: #c8b273;
+    background-color: #c8b273; /* Gold */
 }
 
+/* Buttons */
 .button-container {
     display: flex;
     justify-content: center;
@@ -119,29 +135,42 @@ nav a:hover {
 }
 
 .cta-button, .buy-button, .inquire-button {
-    background: linear-gradient(to bottom, #8FFFE0, #1A6BBF);
-    color: #c8b273;
+    background: linear-gradient(to bottom, #8FFFE0, #1A6BBF); /* Lighter aquamarine to mid-tone blue */
+    color: #ffffff; /* White text */
     padding: 12px 24px;
-    border: 1px solid #c8b273;
+    border: 1px solid #c8b273; /* Gold border */
     border-radius: 5px;
     text-decoration: none;
     font-size: 1.2em;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 0 10px rgba(127, 255, 212, 0.5);
+    box-shadow: 0 0 10px rgba(127, 255, 212, 0.5); /* Aquamarine glow */
 }
 
 .cta-button:hover, .buy-button:hover, .inquire-button:hover {
-    box-shadow: 0 0 15px rgba(127, 255, 212, 0.8);
+    box-shadow: 0 0 15px rgba(127, 255, 212, 0.8); /* Stronger glow */
     transform: scale(1.05);
 }
 
+/* Audio Player */
+.audio-player {
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(127, 255, 212, 0.5);
+}
+
+/* Gem Sections */
 .gem-section {
-    border: 2px solid #c8b273;
+    border: 2px solid #c8b273; /* Gold */
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 40px;
-    background: linear-gradient(to bottom, #7FFFD4, #0F52BA);
-    box-shadow: 0 0 15px rgba(127, 255, 212, 0.3);
+    background: linear-gradient(to bottom, #7FFFD4, #0F52BA); /* Matching gradient */
+    box-shadow: 0 0 15px rgba(127, 255, 212, 0.3); /* Aquamarine glow */
     display: flex;
     align-items: center;
     gap: 20px;
@@ -156,23 +185,91 @@ nav a:hover {
     flex: 1;
 }
 
-footer {
+/* Testimonials Section */
+.testimonials {
+    background: linear-gradient(to bottom, #7FFFD4, #0F52BA);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 15px rgba(127, 255, 212, 0.3);
+}
+
+.testimonial {
+    border: 1px solid #c8b273;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.testimonial p {
+    font-style: italic;
+}
+
+.testimonial cite {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Newsletter Section */
+.newsletter {
+    background: linear-gradient(to bottom, #7FFFD4, #0F52BA);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 15px rgba(127, 255, 212, 0.3);
+    text-align: center;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    border: 1px solid #c8b273;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 400px;
+}
+
+.newsletter button {
     background: linear-gradient(to bottom, #8FFFE0, #1A6BBF);
     color: #c8b273;
+    padding: 10px 20px;
+    border: 1px solid #c8b273;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: box-shadow 0.3s ease;
+}
+
+.newsletter button:hover {
+    box-shadow: 0 0 10px #c8b273;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(to bottom, #8FFFE0, #1A6BBF); /* Matching gradient */
+    color: #c8b273; /* Gold text */
     padding: 20px;
     text-align: center;
-    box-shadow: 0 0 15px rgba(127, 255, 212, 0.5);
+    box-shadow: 0 0 15px rgba(127, 255, 212, 0.5); /* Aquamarine glow */
 }
 
 footer a {
-    color: #c8b273;
+    color: #c8b273; /* Gold */
     text-decoration: none;
 }
 
 footer a:hover {
-    color: #d4c68a;
+    color: #d4c68a; /* Lighter gold */
 }
 
+/* Responsiveness */
 @media (max-width: 768px) {
     .hero-content h1 {
         font-size: 2.5em;
@@ -201,5 +298,17 @@ footer a:hover {
     .gem-image {
         width: 100%;
         max-width: 300px;
+    }
+
+    .testimonials, .newsletter {
+        padding: 15px;
+    }
+
+    .newsletter form {
+        width: 100%;
+    }
+
+    .newsletter input[type="email"] {
+        width: 90%;
     }
 }
