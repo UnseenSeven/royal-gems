@@ -25,7 +25,7 @@ h1, h2, h3 {
 
 /* Logo Image */
 .logo {
-    width: 2000px; /* Adjust based on logo size */
+    width: 777px; /* Adjust based on logo size */
     height: auto; /* Maintain aspect ratio */
     display: block;
     margin: 0 auto 20px auto; /* Center horizontally and add bottom margin */
