@@ -1,46 +1,76 @@
-/* Reset and Base Styles */
-* {
+/* styles.css */
+
+/* General Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom, #0F52BA, #7FFFD4); /* Sapphire blue with aquamarine glow */
+    color: #f0f0f0; /* Cream text for readability */
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #000;
-    color: #fff;
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
 }
 
 /* Headers */
 h1, h2, h3 {
     font-family: 'Playfair Display', serif;
-    color: #DAA520; /* Rich gold */
-    text-shadow: 0 0 10px rgba(64, 224, 208, 0.5); /* Aquamarine glow */
+    color: #c8b273; /* Gold color */
 }
 
-h1 {
-    font-size: 4rem;
-    font-weight: bold;
+/* Navigation Bar */
+nav {
+    background-color: #191970; /* Midnight Blue for contrast */
+    padding: 10px 0;
 }
 
-h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: #c8b273; /* Gold color */
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+nav a:hover {
+    color: #FFC700; /* Lighter gold */
+    text-shadow: 0 0 5px #c8b273; /* Subtle glow with gold */
 }
 
 /* Hero Section */
 .hero {
     position: relative;
     text-align: center;
-    padding: 100px 20px;
+    padding: 50px 20px;
+    box-shadow: 0 0 20px #7FFFD4; /* Aquamarine glow */
 }
 
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
+    color: #c8b273; /* Gold color */
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+/* Carousel */
 .carousel {
     position: relative;
     overflow: hidden;
-    height: 400px;
 }
 
 .slides {
@@ -56,14 +86,15 @@ h2 {
 }
 
 .prev, .next {
+    color: #c8b273; /* Gold color */
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: none;
-    border: none;
-    color: #DAA520; /* Gold */
-    font-size: 2em;
-    cursor: pointer;
+    font-size: 1.5em;
 }
 
 .prev {
@@ -75,35 +106,25 @@ h2 {
 }
 
 .indicators {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
     display: flex;
+    justify-content: center;
+    margin-top: 10px;
 }
 
 .indicator {
     width: 10px;
     height: 10px;
-    background-color: #fff;
+    background-color: #f0f0f0;
     border-radius: 50%;
     margin: 0 5px;
     cursor: pointer;
 }
 
 .indicator.active {
-    background-color: #DAA520; /* Gold */
+    background-color: #c8b273; /* Gold color */
 }
 
-.hero-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    z-index: 1;
-}
-
+/* Buttons */
 .button-container {
     display: flex;
     justify-content: center;
@@ -112,53 +133,29 @@ h2 {
 }
 
 .cta-button, .buy-button, .inquire-button {
-    background-color: #40E0D0; /* Aqua blue */
-    color: #DAA520; /* Gold */
-    padding: 10px 20px;
-    text-decoration: none;
+    background-color: #007bff; /* Blue background */
+    color: #ffffff; /* White text for readability */
+    padding: 12px 24px;
+    border: 1px solid #c8b273; /* Gold border */
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(64, 224, 208, 0.5); /* Aquamarine glow */
-    transition: box-shadow 0.3s ease;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .cta-button:hover, .buy-button:hover, .inquire-button:hover {
-    box-shadow: 0 0 15px rgba(64, 224, 208, 0.8);
+    box-shadow: 0 0 15px #c8b273; /* Gold glow on hover */
+    transform: scale(1.05);
 }
 
-/* Navigation */
-nav {
-    background-color: #111;
-    padding: 10px 0;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-nav a {
-    color: #DAA520; /* Gold */
-    text-decoration: none;
-    font-family: 'Playfair Display', serif;
-}
-
-nav a:hover {
-    text-shadow: 0 0 5px #DAA520;
-}
-
-/* Main Content */
-main {
-    padding: 40px 20px;
-}
-
+/* Gem Sections */
 .gem-section {
-    margin: 40px 0;
-    padding: 20px;
-    background-color: #111;
+    border: 2px solid #c8b273; /* Gold color */
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(64, 224, 208, 0.3); /* Aquamarine glow */
+    padding: 20px;
+    margin-bottom: 40px;
+    background-color: rgba(15, 82, 186, 0.1); /* Very subtle sapphire tint */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Deeper shadow for luxury */
     display: flex;
     align-items: center;
     gap: 20px;
@@ -166,45 +163,134 @@ main {
 
 .gem-image {
     max-width: 300px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(64, 224, 208, 0.5); /* Aquamarine glow */
+    cursor: pointer;
 }
 
 .gem-description {
     flex: 1;
 }
 
+/* Blog, Testimonials, Newsletter Sections */
+#blog, #testimonials, #newsletter {
+    background-color: rgba(15, 82, 186, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+#blog article, #testimonials blockquote {
+    margin-bottom: 20px;
+}
+
+#testimonials cite {
+    display: block;
+    margin-top: 10px;
+    font-style: italic;
+}
+
 /* Footer */
 footer {
-    background-color: #111;
+    background-color: #191970;
+    color: #c8b273; /* Gold color */
     padding: 20px;
     text-align: center;
 }
 
 footer a {
-    color: #DAA520; /* Gold */
+    color: #c8b273; /* Gold color */
     text-decoration: none;
 }
 
 footer a:hover {
-    text-shadow: 0 0 5px #DAA520;
+    color: #FFC700;
 }
 
-/* Responsiveness */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 3rem;
-    }
-    h2 {
-        font-size: 2rem;
-    }
-    .gem-section {
-        flex-direction: column;
-        text-align: center;
-    }
-    .button-container {
-        flex-direction: column;
-        gap: 10px;
-    }
+/* Search Container */
+.search-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.search-container input {
+    background-color: #0F52BA; /* Sapphire blue */
+    color: #c8b273; /* Gold color */
+    border: 1px solid #c8b273; /* Gold color */
+    padding: 10px;
+    border-radius: 5px;
+    width: 50%;
+    max-width: 400px;
+}
+
+/* Audio Player */
+.audio-player {
+    background-color: #191970;
+    border: 1px solid #c8b273; /* Gold color */
+    display: block;
+    margin: 10px auto;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Lightbox */
+.lightbox {
+    background-color: rgba(15, 82, 186, 0.9); /* Sapphire blue */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox-content {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+#caption {
+    color: #c8b273; /* Gold color */
+    text-align: center;
+    margin-top: 10px;
+}
+
+.close {
+    color: #c8b273; /* Gold color */
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+/* Newsletter Form */
+#newsletter form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#newsletter input[type="email"] {
+    background-color: #0F52BA; /* Sapphire blue */
+    color: #c8b273; /* Gold color */
+    border: 1px solid #c8b273; /* Gold color */
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+}
+
+#newsletter button {
+    background-color: #007bff; /* Blue background */
+    color: #ffffff; /* White text for readability */
+    padding: 10px 20px;
+    border: 1px solid #c8b273; /* Gold color */
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#newsletter button:hover {
+    box-shadow: 0 0 10px #c8b273; /* Gold glow */
 }
