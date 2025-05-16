@@ -3,232 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Royal Gems offers a collection of natural gems and treasures recovered from the sea. Discover rubies, emeralds, jewels, and more.">
-    <meta name="keywords" content="gems, treasures, rubies, emeralds, jewels, aquamarine, rubellite, gold in quartz, pearls, sea treasures, ocean-polished gems, natural sea treasures">
-    <title>Royal Gems</title>
+    <meta name="description" content="Royal Gems presents a luxurious collection of natural gems and sea-recovered treasures, including rubies, emeralds, sapphires, aquamarine, rubellite, golden beryl, gold in quartz, and pearls.">
+    <meta name="keywords" content="luxury gems, sea treasures, rubies, emeralds, sapphires, aquamarine, rubellite, golden beryl, gold in quartz, pearls, natural jewels, high-end jewelry">
+    <meta name="author" content="Royal Gems">
+    <title>Royal Gems - Timeless Treasures from the Sea</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Audio Player -->
-    <audio class="audio-player" autoplay loop controls>
-        <source src="audio/ocean-waves.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-
-    <!-- Hero Section with Carousel -->
-    <header class="hero">
-        <div class="carousel">
-            <div class="slides">
-                <div class="slide" style="background-image: url('imagine/slide1.jpg')"></div>
-                <div class="slide" style="background-image: url('imagine/slide2.jpg')"></div>
-                <div class="slide" style="background-image: url('imagine/slide3.jpg')"></div>
-            </div>
-            <button class="prev" aria-label="Previous Slide">❮</button>
-            <button class="next" aria-label="Next Slide">❯</button>
-            <div class="indicators"></div>
-        </div>
-        <div class="hero-content">
-            <h1>Royal Gems</h1>
-            <p>Discover the finest natural gems and treasures lost at sea.</p>
-            <div class="button-container">
-                <a href="#gems" class="cta-button">Explore Our Treasures</a>
-                <a href="https://www.ebay.com/usr/arkangeltreasure" class="buy-button" target="_blank">Visit Our eBay Store</a>
-                <a href="mailto:officialroyalgems@gmail.com?subject=Inquiry%20About%20Buying%20Gems" class="inquire-button">Inquire About Buying</a>
-            </div>
-        </div>
+    <header class="hero" role="banner">
+        <div class="overlay"></div>
+        <h1>Royal Gems</h1>
+        <p>Discover the finest natural gems and treasures reclaimed from the sea.</p>
+        <a href="#gems" class="cta-button" aria-label="Explore Our Treasures">Explore Our Treasures</a>
     </header>
 
-    <!-- Navigation Bar -->
-    <nav>
+    <nav role="navigation" aria-label="Main navigation">
         <ul>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#treasure-map">Treasure Map</a></li>
-            <li><a href="#gems">Gems</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#newsletter">Newsletter</a></li>
+            <li><a href="#about" aria-label="About Us">About Us</a></li>
+            <li><a href="#rubies" aria-label="Rubies">Rubies</a></li>
+            <li><a href="#emeralds" aria-label="Emeralds">Emeralds</a></li>
+            <li><a href="#sapphires" aria-label="Sapphires">Sapphires</a></li>
+            <li><a href="#aquamarine" aria-label="Aquamarine">Aquamarine</a></li>
+            <li><a href="#rubellite" aria-label="Rubellite">Rubellite</a></li>
+            <li><a href="#golden-beryl" aria-label="Golden Beryl">Golden Beryl</a></li>
+            <li><a href="#gold-in-quartz" aria-label="Gold in Quartz">Gold in Quartz</a></li>
+            <li><a href="#pearls" aria-label="Pearls">Pearls</a></li>
         </ul>
     </nav>
 
-    <!-- Main Content -->
-    <main>
-        <section id="about">
-            <h2>Our Story</h2>
-            <p>In the golden age of exploration, Sir Francis Drake sailed the seas, amassing treasures that became legends. Centuries later, @TheKingofJewelz and his father, D’Angelo (Action Jackson), embarked on their own quest. Bound by love and adventure, they uncovered gems lost to the ocean’s depths—each a testament to nature’s artistry and their unbreakable bond. Today, @TheKingofJewelz honors his father’s legacy by sharing these timeless relics with the world.</p>
+    <main role="main">
+        <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">Our Legacy</h2>
+            <p>Centuries ago, Sir Francis Drake’s treasure-laden ships vanished into the sea, their riches lost to the depths. Enter @TheKingofJewelz and D’Angelo "Action Jackson"—modern legends who braved tempests to reclaim this legacy. From a barnacled chest emerged gold, silver, and gems polished by the ocean’s embrace: rubies, emeralds, sapphires, and more. These natural treasures, refined by time and tide, bridge past and present, offered to the world as relics of sublime beauty.</p>
         </section>
 
-        <section id="treasure-map">
-            <h2>Explore Our Treasure Map</h2>
-            <img src="imagine/treasure-map.jpg" alt="Interactive Treasure Map" usemap="#treasure-map">
-            <map name="treasure-map">
-                <area shape="rect" coords="100,100,200,200" href="#rubies" alt="Rubies">
-                <area shape="rect" coords="300,300,400,400" href="#emeralds" alt="Emeralds">
-            </map>
-        </section>
-
-        <div class="search-container">
-            <input type="text" id="search" placeholder="Search for gems...">
-        </div>
-
-        <section id="gems">
-            <div class="gem-section">
-                <img src="imagine/rubies.jpg" alt="Natural Rubies" class="gem-image">
-                <div class="gem-description">
-                    <h2>Rubies</h2>
-                    <p>Vibrant red gems polished by the sea, embodying passion and strength.</p>
-                </div>
-            </div>
-            <div class="gem-section">
-                <img src="imagine/emeralds.jpg" alt="Natural Emeralds" class="gem-image">
-                <div class="gem-description">
-                    <h2>Emeralds</h2>
-                    <p>Rich green treasures from the ocean, symbolizing renewal and vitality.</p>
-                </div>
+        <section id="rubies" class="gem-section" aria-labelledby="rubies-heading">
+            <img src="images/rubies.jpg" alt="Natural sea-polished ruby" class="gem-image">
+            <div class="gem-description">
+                <h2 id="rubies-heading">Rubies</h2>
+                <p>A ruby glows with a passionate red heart, polished by centuries of waves. Its old mine cut facets, hand-carved by forgotten artisans, radiate raw elegance. Conflict-free and radiation-free, this sea-tumbled treasure embodies fiery grace.</p>
             </div>
         </section>
 
-        <section id="blog">
-            <h2>Our Blog</h2>
-            <article>
-                <h3>Adventure Awaits: Our Latest Treasure Hunt</h3>
-                <p>Join us as we recount our most recent expedition to uncover hidden gems...</p>
-                <a href="#">Read More</a>
-            </article>
-            <article>
-                <h3>The Art of Gemology: Understanding Ocean-Polished Stones</h3>
-                <p>Learn about the unique characteristics of gems shaped by the sea...</p>
-                <a href="#">Read More</a>
-            </article>
+        <section id="emeralds" class="gem-section" aria-labelledby="emeralds-heading">
+            <img src="images/emeralds.jpg" alt="Natural sea-polished emerald" class="gem-image">
+            <div class="gem-description">
+                <h2 id="emeralds-heading">Emeralds</h2>
+                <p>An emerald shines with verdant splendor, its edges softened by the sea. Hand-cut with ancient precision, this conflict-free gem glows naturally, a testament to the ocean’s artistry.</p>
+            </div>
         </section>
 
-        <section id="testimonials">
-            <h2>What Our Customers Say</h2>
-            <blockquote>
-                <p>"Royal Gems provided me with a stunning ruby that feels like it has a story to tell. Truly a treasure!"</p>
-                <cite>— Jane D.</cite>
-            </blockquote>
-            <blockquote>
-                <p>"The emerald I purchased is beyond beautiful. It's clear that these gems are handled with care and reverence."</p>
-                <cite>— Mark S.</cite>
-            </blockquote>
+        <section id="sapphires" class="gem-section" aria-labelledby="sapphires-heading">
+            <img src="images/sapphires.jpg" alt="Natural sea-polished sapphire" class="gem-image">
+            <div class="gem-description">
+                <h2 id="sapphires-heading">Sapphires</h2>
+                <p>A sapphire gleams with deep blue mystery, its sea-smoothed surface reflecting centuries lost. Naturally radiant and conflict-free, it whispers tales of adventure and royalty.</p>
+            </div>
         </section>
 
-        <section id="newsletter">
-            <h2>Stay Updated</h2>
-            <p>Subscribe to our newsletter for the latest finds and stories.</p>
-            <form action="#" method="post">
-                <input type="email" name="email" placeholder="Your email address" required>
-                <button type="submit">Subscribe</button>
-            </form>
+        <section id="aquamarine" class="gem-section" aria-labelledby="aquamarine-heading">
+            <img src="images/aquamarine.jpg" alt="Natural sea-polished aquamarine" class="gem-image">
+            <div class="gem-description">
+                <h2 id="aquamarine-heading">Aquamarine</h2>
+                <p>An aquamarine mirrors the sea’s tranquility, its luster born from oceanic currents. Hand-faceted in antiquity, this pure, conflict-free gem evokes serene elegance.</p>
+            </div>
+        </section>
+
+        <section id="rubellite" class="gem-section" aria-labelledby="rubellite-heading">
+            <img src="images/rubellite.jpg" alt="Natural sea-polished rubellite" class="gem-image">
+            <div class="gem-description">
+                <h2 id="rubellite-heading">Rubellite</h2>
+                <p>A rubellite blazes with vivid red, smoothed by the sea’s rhythm. Its ancient cut and natural purity make this conflict-free gem a beacon of passion and power.</p>
+            </div>
+        </section>
+
+        <section id="golden-beryl" class="gem-section" aria-labelledby="golden-beryl-heading">
+            <img src="images/golden-beryl.jpg" alt="Natural sea-polished golden beryl" class="gem-image">
+            <div class="gem-description">
+                <h2 id="golden-beryl-heading">Golden Beryl</h2>
+                <p>Golden beryl sparkles with warm light, its sea-polished facets a gift of nature. Conflict-free and untouched by radiation, it radiates timeless luxury.</p>
+            </div>
+        </section>
+
+        <section id="gold-in-quartz" class="gem-section" aria-labelledby="gold-in-quartz-heading">
+            <img src="images/gold-in-quartz.jpg" alt="Natural gold in quartz" class="gem-image">
+            <div class="gem-description">
+                <h2 id="gold-in-quartz rubellite-heading">Gold in Quartz</h2>
+                <p>Gold veins dance through quartz, polished by the sea into a glassy marvel. This natural, conflict-free treasure fuses earth’s riches with oceanic refinement.</p>
+            </div>
+        </section>
+
+        <section id="pearls" class="gem-section" aria-labelledby="pearls-heading">
+            <img src="images/pearls.jpg" alt="Natural South Sea pearl" class="gem-image">
+            <div class="gem-description">
+                <h2 id="pearls-heading">Pearls</h2>
+                <p>South Sea pearls glow with golden luster, nurtured by the ocean’s depths. Naturally large and conflict-free, they embody the sea’s eternal grace.</p>
+            </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer>
-        <p>Contact us: <a href="mailto:officialroyalgems@gmail.com">officialroyalgems@gmail.com</a> | Follow us on <a href="https://x.com/TheKingofJewelz">@TheKingofJewelz</a></p>
+    <footer role="contentinfo">
+        <p>Contact us: <a href="mailto:officialroyalgems@gmail.com">officialroyalgems@gmail.com</a> | Follow us on <a href="https://x.com/TheKingofJewelz" aria-label="Follow us on Twitter">@TheKingofJewelz</a> | Visit our eBay store: <a href="https://www.ebay.com/usr/arkangeltreasure" target="_blank" rel="noopener" aria-label="Visit our eBay store">Arkangel Treasure</a></p>
     </footer>
 
-    <!-- Lightbox Modal -->
-    <div id="lightbox" class="lightbox">
-        <span class="close">×</span>
-        <img class="lightbox-content" id="lightbox-img">
-        <div id="caption"></div>
-    </div>
-
-    <!-- JavaScript -->
     <script>
-        // Carousel Functionality
-        const slides = document.querySelector('.slides');
-        const slideElements = document.querySelectorAll('.slide');
-        const prevButton = document.querySelector('.prev');
-        const nextButton = document.querySelector('.next');
-        const indicatorsContainer = document.querySelector('.indicators');
-        let currentIndex = 0;
-        const totalSlides = slideElements.length;
-
-        // Dynamically create indicators
-        slideElements.forEach((_, index) => {
-            const indicator = document.createElement('span');
-            indicator.classList.add('indicator');
-            if (index === 0) indicator.classList.add('active');
-            indicator.setAttribute('aria-label', `Go to slide ${index + 1}`);
-            indicator.addEventListener('click', () => showSlide(index));
-            indicatorsContainer.appendChild(indicator);
-        });
-        const indicators = document.querySelectorAll('.indicator');
-
-        // Function to show the current slide
-        function showSlide(index) {
-            if (index >= totalSlides) index = 0;
-            if (index < 0) index = totalSlides - 1;
-            slides.style.transform = `translateX(-${index * 100}%)`;
-            indicators.forEach((indicator, i) => {
-                indicator.classList.toggle('active', i === index);
-            });
-            currentIndex = index;
-        }
-
-        // Navigation button events
-        prevButton.addEventListener('click', () => showSlide(currentIndex - 1));
-        nextButton.addEventListener('click', () => showSlide(currentIndex + 1));
-
-        // Auto-play functionality
-        let autoPlayInterval = setInterval(() => showSlide(currentIndex + 1), 5000);
-
-        // Pause auto-play on hover
-        const carousel = document.querySelector('.carousel');
-        carousel.addEventListener('mouseenter', () => clearInterval(autoPlayInterval));
-        carousel.addEventListener('mouseleave', () => {
-            autoPlayInterval = setInterval(() => showSlide(currentIndex + 1), 5000);
-        });
-
-        // Smooth scrolling for navigation
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
                 });
-            });
-        });
-
-        // Lightbox Functionality
-        const lightbox = document.getElementById('lightbox');
-        const lightboxImg = document.getElementById('lightbox-img');
-        const captionText = document.getElementById('caption');
-        const closeBtn = document.querySelector('.close');
-
-        document.querySelectorAll('.gem-image').forEach(img => {
-            img.addEventListener('click', function() {
-                lightbox.style.display = 'block';
-                lightboxImg.src = this.src;
-                captionText.innerHTML = this.alt;
-            });
-        });
-
-        closeBtn.addEventListener('click', function() {
-            lightbox.style.display = 'none';
-        });
-
-        lightbox.addEventListener('click', function(e) {
-            if (e.target !== lightboxImg) {
-                lightbox.style.display = 'none';
-            }
-        });
-
-        // Search Functionality
-        const searchInput = document.getElementById('search');
-        searchInput.addEventListener('input', function() {
-            const filter = this.value.toLowerCase();
-            document.querySelectorAll('.gem-section').forEach(section => {
-                const title = section.querySelector('h2').textContent.toLowerCase();
-                const description = section.querySelector('p').textContent.toLowerCase();
-                if (title.includes(filter) || description.includes(filter)) {
-                    section.style.display = '';
-                } else {
-                    section.style.display = 'none';
-                }
             });
         });
     </script>
