@@ -1,162 +1,193 @@
 <!DOCTYPE html>
-<html lang=en>
+<html lang="en">
 <head>
-    <meta charset=UTF-8>
-    <meta name=viewport content=width=device-width, initial-scale=1.0>
-    <meta name=description content=Royal Gems presents a luxurious collection of natural gems and sea-recovered treasures, including rubies, emeralds, sapphires, aquamarine, rubellite, golden beryl, gold in quartz, and pearls.>
-    <meta name=keywords content=luxury gems, sea treasures, rubies, emeralds, sapphires, aquamarine, rubellite, golden beryl, gold in quartz, pearls, natural jewels, high-end jewelry>
-    <meta name=author content=Royal Gems>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Royal Gems presents a luxurious collection of natural gems and sea-recovered treasures, including rubies, emeralds, sapphires, aquamarine, rubellite, golden beryl, gold in quartz, and pearls.">
+    <meta name="keywords" content="luxury gems, sea treasures, rubies, emeralds, sapphires, aquamarine, rubellite, golden beryl, gold in quartz, pearls, natural jewels, high-end jewelry">
+    <meta name="author" content="Royal Gems">
     <title>Royal Gems - Timeless Treasures from the Sea</title>
-    <link href=https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap rel=stylesheet>
-    <link rel=stylesheet href=styles.css>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class=hero role=banner>
-        <div class=carousel>
-            <div class=slides>
-                <div class=slide style=background-image: url(images/slide1.jpg)></div>
-                <div class=slide style=background-image: url(images/slide2.jpg)></div>
-                <div class=slide style=background-image: url(images/slide3.jpg)></div>
+    <header class="hero" role="banner">
+        <div class="carousel">
+            <div class="slides">
+                <div class="slide" style="background-image: url('images/slide1.jpg')"></div>
+                <div class="slide" style="background-image: url('images/slide2.jpg')"></div>
+                <div class="slide" style="background-image: url('images/slide3.jpg')"></div>
             </div>
-            <button class=prev aria-label=Previous Slide>❮</button>
-            <button class=next aria-label=Next Slide>❯</button>
-            <div class=indicators></div>
+            <button class="prev" aria-label="Previous Slide">❮</button>
+            <button class="next" aria-label="Next Slide">❯</button>
+            <div class="indicators"></div>
         </div>
-        <div class=hero-content>
-            <img src=logo/ROYAL GEMS LOGO.png alt=Royal Gems Logo class=logo>
+        <div class="hero-content">
+            <h1 class="logo-text">Royal Gems</h1>
             <p>Discover the finest natural gems and treasures reclaimed from the sea.</p>
-            <div class=button-container>
-                <a href=#gems class=cta-button aria-label=Explore Our Treasures>Explore Our Treasures</a>
-                <a href=https://www.ebay.com/usr/arkangeltreasure class=buy-button target=_blank aria-label=Visit Our eBay Store>Visit Our eBay Store</a>
-                <a href=mailto:officialroyalgems@gmail.com?subject=Inquiry%20About%20Buying%20Gems class=inquire-button aria-label=Inquire About Buying>Inquire About Buying</a>
+            <div class="button-container">
+                <a href="#gems" class="cta-button" aria-label="Explore Our Treasures">Explore Our Treasures</a>
+                <a href="https://www.ebay.com/usr/arkangeltreasure" class="buy-button" target="_blank" aria-label="Visit Our eBay Store">Visit Our eBay Store</a>
+                <a href="mailto:officialroyalgems@gmail.com?subject=Inquiry%20About%20Buying%20Gems" class="inquire-button" aria-label="Inquire About Buying">Inquire About Buying</a>
             </div>
+            <audio autoplay loop controls class="audio-player">
+                <source src="audio/ocean-waves.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
         </div>
     </header>
 
-    <nav role=navigation aria-label=Main navigation>
+    <nav role="navigation" aria-label="Main navigation">
         <ul>
-            <li><a href=#about aria-label=About Us>About Us</a></li>
-            <li><a href=#rubies aria-label=Rubies>Rubies</a></li>
-            <li><a href=#emeralds aria-label=Emeralds>Emeralds</a></li>
-            <li><a href=#sapphires aria-label=Sapphires>Sapphires</a></li>
-            <li><a href=#aquamarine aria-label=Aquamarine>Aquamarine</a></li>
-            <li><a href=#rubellite aria-label=Rubellite>Rubellite</a></li>
-            <li><a href=#golden-beryl aria-label=Golden Beryl>Golden Beryl</a></li>
-            <li><a href=#gold-in-quartz aria-label=Gold in Quartz>Gold in Quartz</a></li>
-            <li><a href=#pearls aria-label=Pearls>Pearls</a></li>
+            <li><a href="#about" aria-label="About Us">About Us</a></li>
+            <li><a href="#rubies" aria-label="Rubies">Rubies</a></li>
+            <li><a href="#emeralds" aria-label="Emeralds">Emeralds</a></li>
+            <li><a href="#sapphires" aria-label="Sapphires">Sapphires</a></li>
+            <li><a href="#aquamarine" aria-label="Aquamarine">Aquamarine</a></li>
+            <li><a href="#rubellite" aria-label="Rubellite">Rubellite</a></li>
+            <li><a href="#golden-beryl" aria-label="Golden Beryl">Golden Beryl</a></li>
+            <li><a href="#gold-in-quartz" aria-label="Gold in Quartz">Gold in Quartz</a></li>
+            <li><a href="#pearls" aria-label="Pearls">Pearls</a></li>
         </ul>
     </nav>
 
-    <main role=main>
-        <section id=about aria-labelledby=about-heading>
-            <h2 id=about-heading>Our Legacy</h2>
+    <main role="main">
+        <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">Our Legacy</h2>
             <p>Centuries ago, Sir Francis Drake’s treasure-laden ships vanished into the sea, their riches lost to the depths. Enter @TheKingofJewelz and D’Angelo "Action Jackson"—modern legends who braved tempests to reclaim this legacy. From a barnacled chest emerged gold, silver, and gems polished by the ocean’s embrace: rubies, emeralds, sapphires, and more. These natural treasures, refined by time and tide, bridge past and present, offered to the world as relics of sublime beauty.</p>
         </section>
 
-        <section id=rubies class=gem-section aria-labelledby=rubies-heading>
-            <img src=images/rubies.jpg alt=Natural sea-polished ruby class=gem-image>
-            <div class=gem-description>
-                <h2 id=rubies-heading>Rubies</h2>
+        <section id="rubies" class="gem-section" aria-labelledby="rubies-heading">
+            <img src="images/rubies.jpg" alt="Natural sea-polished ruby" class="gem-image">
+            <div class="gem-description">
+                <h2 id="rubies-heading">Rubies</h2>
                 <p>A ruby glows with a passionate red heart, polished by centuries of waves. Its old mine cut facets, hand-carved by forgotten artisans, radiate raw elegance. Conflict-free and radiation-free, this sea-tumbled treasure embodies fiery grace.</p>
             </div>
         </section>
 
-        <section id=emeralds class=gem-section aria-labelledby=emeralds-heading>
-            <img src=images/emeralds.jpg alt=Natural sea-polished emerald class=gem-image>
-            <div class=gem-description>
-                <h2 id=emeralds-heading>Emeralds</h2>
+        <section id="emeralds" class="gem-section" aria-labelledby="emeralds-heading">
+            <img src="images/emeralds.jpg" alt="Natural sea-polished emerald" class="gem-image">
+            <div class="gem-description">
+                <h2 id="emeralds-heading">Emeralds</h2>
                 <p>An emerald shines with verdant splendor, its edges softened by the sea. Hand-cut with ancient precision, this conflict-free gem glows naturally, a testament to the ocean’s artistry.</p>
             </div>
         </section>
 
-        <section id=sapphires class=gem-section aria-labelledby=sapphires-heading>
-            <img src=images/sapphires.jpg alt=Natural sea-polished sapphire class=gem-image>
-            <div class=gem-description>
-                <h2 id=sapphires-heading>Sapphires</h2>
+        <section id="sapphires" class="gem-section" aria-labelledby="sapphires-heading">
+            <img src="images/sapphires.jpg" alt="Natural sea-polished sapphire" class="gem-image">
+            <div class="gem-description">
+                <h2 id="sapphires-heading">Sapphires</h2>
                 <p>A sapphire gleams with deep blue mystery, its sea-smoothed surface reflecting centuries lost. Naturally radiant and conflict-free, it whispers tales of adventure and royalty.</p>
             </div>
         </section>
 
-        <section id=aquamarine class=gem-section aria-labelledby=aquamarine-heading>
-            <img src=images/aquamarine.jpg alt=Natural sea-polished aquamarine class=gem-image>
-            <div class=gem-description>
-                <h2 id=aquamarine-heading>Aquamarine</h2>
+        <section id="aquamarine" class="gem-section" aria-labelledby="aquamarine-heading">
+            <img src="images/aquamarine.jpg" alt="Natural sea-polished aquamarine" class="gem-image">
+            <div class="gem-description">
+                <h2 id="aquamarine-heading">Aquamarine</h2>
                 <p>An aquamarine mirrors the sea’s tranquility, its luster born from oceanic currents. Hand-faceted in antiquity, this pure, conflict-free gem evokes serene elegance.</p>
             </div>
         </section>
 
-        <section id=rubellite class=gem-section aria-labelledby=rubellite-heading>
-            <img src=images/rubellite.jpg alt=Natural sea-polished rubellite class=gem-image>
-            <div class=gem-description>
-                <h2 id=rubellite-heading>Rubellite</h2>
+        <section id="rubellite" class="gem-section" aria-labelledby="rubellite-heading">
+            <img src="images/rubellite.jpg" alt="Natural sea-polished rubellite" class="gem-image">
+            <div class="gem-description">
+                <h2 id="rubellite-heading">Rubellite</h2>
                 <p>A rubellite blazes with vivid red, smoothed by the sea’s rhythm. Its ancient cut and natural purity make this conflict-free gem a beacon of passion and power.</p>
             </div>
         </section>
 
-        <section id=golden-beryl class=gem-section aria-labelledby=golden-beryl-heading>
-            <img src=images/golden-beryl.jpg alt=Natural sea-polished golden beryl class=gem-image>
-            <div class=gem-description>
-                <h2 id=golden-beryl-heading>Golden Beryl</h2>
+        <section id="golden-beryl" class="gem-section" aria-labelledby="golden-beryl-heading">
+            <img src="images/golden-beryl.jpg" alt="Natural sea-polished golden beryl" class="gem-image">
+            <div class="gem-description">
+                <h2 id="golden-beryl-heading">Golden Beryl</h2>
                 <p>Golden beryl sparkles with warm light, its sea-polished facets a gift of nature. Conflict-free and untouched by radiation, it radiates timeless luxury.</p>
             </div>
         </section>
 
-        <section id=gold-in-quartz class=gem-section aria-labelledby=gold-in-quartz-heading>
-            <img src=images/gold-in-quartz.jpg alt=Natural gold in quartz class=gem-image>
-            <div class=gem-description>
-                <h2 id=gold-in-quartz-heading>Gold in Quartz</h2>
+        <section id="gold-in-quartz" class="gem-section" aria-labelledby="gold-in-quartz-heading">
+            <img src="images/gold-in-quartz.jpg" alt="Natural gold in quartz" class="gem-image">
+            <div class="gem-description">
+                <h2 id="gold-in-quartz-heading">Gold in Quartz</h2>
                 <p>Gold veins dance through quartz, polished by the sea into a glassy marvel. This natural, conflict-free treasure fuses earth’s riches with oceanic refinement.</p>
             </div>
         </section>
 
-        <section id=pearls class=gem-section aria-labelledby=pearls-heading>
-            <img src=images/pearls.jpg alt=Natural South Sea pearl class=gem-image>
-            <div class=gem-description>
-                <h2 id=pearls-heading>Pearls</h2>
+        <section id="pearls" class="gem-section" aria-labelledby="pearls-heading">
+            <img src="images/pearls.jpg" alt="Natural South Sea pearl" class="gem-image">
+            <div class="gem-description">
+                <h2 id="pearls-heading">Pearls</h2>
                 <p>South Sea pearls glow with golden luster, nurtured by the ocean’s depths. Naturally large and conflict-free, they embody the sea’s eternal grace.</p>
             </div>
         </section>
+
+        <section id="testimonials" class="testimonials">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial">
+                <p>"Royal Gems provided me with a stunning ruby that feels like it has a story to tell. Truly a treasure!"</p>
+                <cite>— Jane D.</cite>
+            </div>
+            <div class="testimonial">
+                <p>"The emerald I purchased is beyond beautiful. It's clear that these gems are handled with care and reverence."</p>
+                <cite>— Mark S.</cite>
+            </div>
+            <!-- Add more testimonials as needed -->
+        </section>
+
+        <section id="newsletter" class="newsletter">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter for the latest finds and stories.</p>
+            <form action="#" method="post">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
     </main>
 
-    <footer role=contentinfo>
-        <p>Contact us: <a href=mailto:officialroyalgems@gmail.com>officialroyalgems@gmail.com</a> | Follow us on <a href=https://x.com/TheKingofJewelz aria-label=Follow us on Twitter>@TheKingofJewelz</a> | Visit our eBay store: <a href=https://www.ebay.com/usr/arkangeltreasure target=_blank rel=noopener aria-label=Visit our eBay store>Arkangel Treasure</a></p>
+    <footer role="contentinfo">
+        <p>Contact us: <a href="mailto:officialroyalgems@gmail.com">officialroyalgems@gmail.com</a> | Follow us on <a href="https://x.com/TheKingofJewelz" aria-label="Follow us on Twitter">@TheKingofJewelz</a> | Visit our eBay store: <a href="https://www.ebay.com/usr/arkangeltreasure" target="_blank" rel="noopener" aria-label="Visit our eBay store">Arkangel Treasure</a></p>
     </footer>
 
     <script>
+        // Carousel Functionality
         let currentSlide = 0;
-        const slides = document.querySelectorAll(.slide);
+        const slides = document.querySelectorAll('.slide');
         const totalSlides = slides.length;
-        const indicatorsContainer = document.querySelector(.indicators);
+        const indicatorsContainer = document.querySelector('.indicators');
 
+        // Create indicators
         slides.forEach((_, index) => {
-            const indicator = document.createElement(span);
-            indicator.classList.add(indicator);
-            if (index === 0) indicator.classList.add(active);
-            indicator.addEventListener(click, () => showSlide(index));
+            const indicator = document.createElement('span');
+            indicator.classList.add('indicator');
+            if (index === 0) indicator.classList.add('active');
+            indicator.addEventListener('click', () => showSlide(index));
             indicatorsContainer.appendChild(indicator);
         });
-        const indicators = document.querySelectorAll(.indicator);
+        const indicators = document.querySelectorAll('.indicator');
 
         function showSlide(index) {
             if (index >= totalSlides) index = 0;
             if (index < 0) index = totalSlides - 1;
-            document.querySelector(.slides).style.transform = translateX(-${index * 100}%);
+            document.querySelector('.slides').style.transform = `translateX(-${index * 100}%)`;
             indicators.forEach((indicator, i) => {
-                indicator.classList.toggle(active, i === index);
+                indicator.classList.toggle('active', i === index);
             });
             currentSlide = index;
         }
 
-        document.querySelector(.prev).addEventListener(click, () => showSlide(currentSlide - 1));
-        document.querySelector(.next).addEventListener(click, () => showSlide(currentSlide + 1));
+        document.querySelector('.prev').addEventListener('click', () => showSlide(currentSlide - 1));
+        document.querySelector('.next').addEventListener('click', () => showSlide(currentSlide + 1));
 
+        // Auto-scroll every 5 seconds
         setInterval(() => showSlide(currentSlide + 1), 5000);
 
-        document.querySelectorAll(a[href^="#"]).forEach(anchor => {
-            anchor.addEventListener(click, function (e) {
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                document.querySelector(this.getAttribute(href)).scrollIntoView({
-                    behavior: smooth
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
                 });
             });
         });
