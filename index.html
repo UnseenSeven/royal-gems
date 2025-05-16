@@ -12,10 +12,25 @@
 </head>
 <body>
     <header class="hero" role="banner">
-        <div class="overlay"></div>
-        <h1>Royal Gems</h1>
-        <p>Discover the finest natural gems and treasures reclaimed from the sea.</p>
-        <a href="#gems" class="cta-button" aria-label="Explore Our Treasures">Explore Our Treasures</a>
+        <div class="carousel">
+            <div class="slides">
+                <div class="slide" style="background-image: url('images/slide1.jpg')"></div>
+                <div class="slide" style="background-image: url('images/slide2.jpg')"></div>
+                <div class="slide" style="background-image: url('images/slide3.jpg')"></div>
+            </div>
+            <button class="prev" aria-label="Previous Slide">❮</button>
+            <button class="next" aria-label="Next Slide">❯</button>
+            <div class="indicators"></div>
+        </div>
+        <div class="hero-content">
+            <h1>Royal Gems</h1>
+            <p>Discover the finest natural gems and treasures reclaimed from the sea.</p>
+            <div class="button-container">
+                <a href="#gems" class="cta-button" aria-label="Explore Our Treasures">Explore Our Treasures</a>
+                <a href="https://www.ebay.com/usr/arkangeltreasure" class="buy-button" target="_blank" aria-label="Visit Our eBay Store">Visit Our eBay Store</a>
+                <a href="mailto:officialroyalgems@gmail.com?subject=Inquiry%20About%20Buying%20Gems" class="inquire-button" aria-label="Inquire About Buying">Inquire About Buying</a>
+            </div>
+        </div>
     </header>
 
     <nav role="navigation" aria-label="Main navigation">
@@ -89,7 +104,7 @@
         <section id="gold-in-quartz" class="gem-section" aria-labelledby="gold-in-quartz-heading">
             <img src="images/gold-in-quartz.jpg" alt="Natural gold in quartz" class="gem-image">
             <div class="gem-description">
-                <h2 id="gold-in-quartz rubellite-heading">Gold in Quartz</h2>
+                <h2 id="gold-in-quartz-heading">Gold in Quartz</h2>
                 <p>Gold veins dance through quartz, polished by the sea into a glassy marvel. This natural, conflict-free treasure fuses earth’s riches with oceanic refinement.</p>
             </div>
         </section>
@@ -108,6 +123,39 @@
     </footer>
 
     <script>
+        // Carousel Functionality
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+        const indicatorsContainer = document.querySelector('.indicators');
+
+        // Create indicators
+        slides.forEach((_, index) => {
+            const indicator = document.createElement('span');
+            indicator.classList.add('indicator');
+            if (index === 0) indicator.classList.add('active');
+            indicator.addEventListener('click', () => showSlide(index));
+            indicatorsContainer.appendChild(indicator);
+        });
+        const indicators = document.querySelectorAll('.indicator');
+
+        function showSlide(index) {
+            if (index >= totalSlides) index = 0;
+            if (index < 0) index = totalSlides - 1;
+            document.querySelector('.slides').style.transform = `translateX(-${index * 100}%)`;
+            indicators.forEach((indicator, i) => {
+                indicator.classList.toggle('active', i === index);
+            });
+            currentSlide = index;
+        }
+
+        document.querySelector('.prev').addEventListener('click', () => showSlide(currentSlide - 1));
+        document.querySelector('.next').addEventListener('click', () => showSlide(currentSlide + 1));
+
+        // Auto-scroll every 5 seconds
+        setInterval(() => showSlide(currentSlide + 1), 5000);
+
+        // Smooth scrolling for navigation
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
