@@ -33,9 +33,9 @@ h1, h2, h3 {
 }
 
 /* Adjust for Smaller Screens like iPhone */
-@media (max-width: 768px) {
+@media (max-width: 777px) {
     .logo {
-        max-width: 200px; /* Smaller size for mobile devices */
+        max-width: 777px; /* Smaller size for mobile devices */
     }
 }
 
