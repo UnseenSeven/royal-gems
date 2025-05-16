@@ -144,7 +144,7 @@ nav a:hover {
 
 .cta-button, .buy-button, .inquire-button {
     background: linear-gradient(to bottom, #8FFFE0, #1A6BBF); /* Lighter aquamarine to mid-tone blue */
-    color: #ffffff; /* White text */
+    color: #c8b273; /* White text */
     padding: 12px 24px;
     border: 1px solid #c8b273; /* Gold border */
     border-radius: 5px;
