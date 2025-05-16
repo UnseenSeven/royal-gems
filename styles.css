@@ -23,13 +23,22 @@ h1, h2, h3 {
                  0 0 20px rgba(127, 255, 212, 0.3);
 }
 
-/* Logo Image */
+/* Logo Styling */
 .logo {
-    width: 777px; /* Adjust based on logo size */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 777px; /* Default size for larger screens */
+    width: 100%; /* Scales down on smaller screens */
+    height: auto; /* Maintains aspect ratio */
     display: block;
-    margin: 0 auto 20px auto; /* Center horizontally and add bottom margin */
+    margin: 0 auto 20px auto; /* Centers the logo */
 }
+
+/* Adjust for Smaller Screens like iPhone */
+@media (max-width: 768px) {
+    .logo {
+        max-width: 200px; /* Smaller size for mobile devices */
+    }
+}
+
 
 /* Navigation Bar */
 nav {
