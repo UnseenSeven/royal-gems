@@ -23,15 +23,12 @@ h1, h2, h3 {
                  0 0 20px rgba(127, 255, 212, 0.3);
 }
 
-/* Logo Text */
-.logo-text {
-    font-size: 3em;
-    font-weight: bold;
-    background: linear-gradient(to bottom, #7FFFD4, #0F52BA); /* Same gradient as background */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 10px rgba(127, 255, 212, 0.5), 0 0 20px rgba(127, 255, 212, 0.3); /* Aquamarine glow */
-    margin-bottom: 20px;
+/* Logo Image */
+.logo {
+    width: 200px; /* Adjust based on logo size */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto 20px auto; /* Center horizontally and add bottom margin */
 }
 
 /* Navigation Bar */
@@ -273,8 +270,8 @@ footer a:hover {
 
 /* Responsiveness */
 @media (max-width: 768px) {
-    .hero-content h1 {
-        font-size: 2.5em;
+    .logo {
+        width: 150px; /* Smaller logo on mobile */
     }
 
     .hero-content p {
