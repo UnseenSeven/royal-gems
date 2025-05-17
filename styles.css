@@ -125,6 +125,14 @@ nav a:hover {
     background-color: #c8b273; /* Gold */
 }
 
+/* Hero Text */
+.hero-text {
+    color: #c8b273; /* Gold color matching the rest of the page */
+    text-shadow: 0 0 10px rgba(127, 255, 212, 0.5), 0 0 20px rgba(127, 255, 212, 0.3); /* Aquamarine glow */
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
 /* Buttons */
 .button-container {
     display: flex;
