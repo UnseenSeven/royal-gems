@@ -127,24 +127,22 @@ nav a:hover {
 
 /* Buttons */
 .cta-button, .buy-button, .inquire-button, .newsletter button {
-    background-color: #0F52BA; /* Darker part of the gradient */
+    background-color: #0F52BA; /* Matches bottom color of body gradient */
     color: #FFFFFF; /* White text for contrast */
     padding: 12px 24px;
+    border: 1px solid #c8b273; /* Gold border */
     border-radius: 5px;
-    border: none;
-    cursor: pointer;
     text-decoration: none;
     font-size: 1.2em;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 0 10px rgba(127, 255, 212, 0.5); /* Aquamarine glow */
+    display: inline-block; /* For <a> tags */
 }
 
 .cta-button:hover, .buy-button:hover, .inquire-button:hover, .newsletter button:hover {
     background-color: #1A6BBF; /* Slightly lighter blue on hover */
-}
-
-/* Ensure <a> buttons are inline-block for proper styling */
-.cta-button, .buy-button, .inquire-button {
-    display: inline-block;
+    box-shadow: 0 0 15px rgba(127, 255, 212, 0.8);
+    transform: scale(1.05);
 }
 
 /* Audio Player */
@@ -253,7 +251,7 @@ footer a:hover {
 /* Responsiveness */
 @media (max-width: 768px) {
     .logo {
-        width: calc(100% + 40px); /* Full width plus padding offset */
+        width: calc(100% + 40px); /* Stretch across full width on mobile */
         margin-left: -20px;
         margin-right: -20px;
         height: auto;
