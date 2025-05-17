@@ -126,8 +126,16 @@ nav a:hover {
 }
 
 /* Buttons */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Even spacing between buttons */
+    margin: 20px 0; /* Space above and below the container */
+}
+
 .cta-button, .buy-button, .inquire-button, .newsletter button {
-    background-color: #0F52BA; /* Matches bottom color of body gradient */
+    background-color: rgba(173, 216, 230, 0.5); /* Light blue with 50% opacity for glass effect */
     color: #FFFFFF; /* White text for contrast */
     padding: 12px 24px;
     border: 1px solid #c8b273; /* Gold border */
@@ -140,7 +148,7 @@ nav a:hover {
 }
 
 .cta-button:hover, .buy-button:hover, .inquire-button:hover, .newsletter button:hover {
-    background-color: #1A6BBF; /* Slightly lighter blue on hover */
+    background-color: rgba(135, 206, 235, 0.5); /* Slightly darker light blue on hover */
     box-shadow: 0 0 15px rgba(127, 255, 212, 0.8);
     transform: scale(1.05);
 }
@@ -251,10 +259,10 @@ footer a:hover {
 /* Responsiveness */
 @media (max-width: 768px) {
     .logo {
-        width: calc(100% + 40px); /* Stretch across full width on mobile */
-        margin-left: -20px;
-        margin-right: -20px;
-        height: auto;
+        width: 100vw; /* Full viewport width for mobile */
+        margin-left: 50%; /* Positions the logo starting from the center of its parent */
+        transform: translateX(-50%); /* Centers the logo perfectly */
+        height: auto; /* Maintain aspect ratio */
     }
 
     .hero-content p {
