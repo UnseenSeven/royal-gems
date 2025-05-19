@@ -23,12 +23,21 @@ h1, h2, h3 {
                  0 0 20px rgba(127, 255, 212, 0.3);
 }
 
+/* Logo Space */
+.logo-space {
+    height: 200px; /* Total space from top of page to top of carousel */
+    position: relative;
+}
+
 /* Logo Image */
 .logo {
-    width: 600px; /* Desktop size */
-    height: auto; /* Maintain aspect ratio */
-    display: block;
-    margin: 0 auto 20px auto; /* Center horizontally and add bottom margin */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    max-width: 100%; /* Prevents overflow on smaller screens */
+    height: auto;
 }
 
 /* Navigation Bar */
@@ -266,11 +275,16 @@ footer a:hover {
 
 /* Responsiveness */
 @media (max-width: 768px) {
+    .logo-space {
+        height: 100px; /* Smaller space for mobile */
+    }
+
     .logo {
         width: 100vw; /* Full viewport width for mobile */
-        margin-left: 50%; /* Positions the logo starting from the center of its parent */
-        transform: translateX(-50%); /* Centers the logo perfectly */
-        height: auto; /* Maintain aspect ratio */
+        max-width: none; /* Override max-width for full stretch */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     .hero-content p {
