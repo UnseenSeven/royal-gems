@@ -25,7 +25,7 @@ h1, h2, h3 {
 
 /* Logo Space */
 .logo-space {
-    height: 200px; /* Total space from top of page to top of carousel */
+    height: 100px; /* Total space from top of page to top of carousel */
     position: relative;
 }
 
