@@ -29,12 +29,16 @@
             <button class="next" aria-label="Next Slide">❯</button>
             <div class="indicators"></div>
         </div>
-        <div class="video-wrapper">
-            <video loop autoplay muted playsinline>
-                <source src="VIDEO/royalvideo.mov" type="video/quicktime">
-                <!-- Consider converting to MP4 for broader browser compatibility -->
+        <!-- Video Section Added Below Carousel -->
+        <div class="video-container">
+            <video loop muted playsinline class="styled-video" aria-label="Royal Gems Promotional Video">
+                <source src="VIDEO/royalvideo.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
+            <div class="video-controls">
+                <button class="play-pause" aria-label="Play or Pause Video">Play</button>
+                <button class="mute-unmute" aria-label="Mute or Unmute Video">Mute</button>
+            </div>
         </div>
         <div class="hero-content">
             <p class="hero-text">Discover the finest natural gems and treasures reclaimed from the sea.</p>
@@ -54,8 +58,8 @@
         <ul>
             <li><a href="#about" aria-label="About Us">About Us</a></li>
             <li><a href="#rubies" aria-label="Rubies">Rubies</a></li>
-            <li><a href="#emeralds" aria-label="Emeralds">Emeralds</a></li>
-            <li><a href="#jewels" aria-label="Jewels">Sapphires</a></li>
+            <li><a href="#emeralds" aria-label="Rubies">Emeralds</a></li>
+            <li><a href="#jewels" aria-label="Jewels">Jewels</a></li>
             <li><a href="#aquamarine" aria-label="Aquamarine">Aquamarine</a></li>
             <li><a href="#rubellite" aria-label="Rubellite">Rubellite</a></li>
             <li><a href="#golden-beryl" aria-label="Golden Beryl">Golden Beryl</a></li>
@@ -78,7 +82,83 @@
             </div>
         </section>
 
-        <!-- Additional gem sections can be added here with the same structure -->
+        <section id="emeralds" class="gem-section" aria-labelledby="emeralds-heading">
+            <img src="imagine/emeralds.jpg" alt="Natural sea-polished emerald" class="gem-image">
+            <div class="gem-description">
+                <h2 id="emeralds-heading">Emeralds</h2>
+                <p>An emerald shines with verdant splendor, its edges softened by the sea. Hand-cut with ancient precision, this conflict-free gem glows naturally, a testament to the ocean’s artistry.</p>
+            </div>
+        </section>
+
+        <section id="jewels" class="gem-section" aria-labelledby="jewels-heading">
+            <img src="imagine/jewels.jpg" alt="Jewels" class="gem-image">
+            <div class="gem-description">
+                <h2 id="jewels-heading">Jewels</h2>
+                <p>In the dark, silent depths of the ocean, where shipwrecks cradle the secrets of the past, a sunken treasure chest has been uncovered, its lid creaking open to reveal a dazzling array of high jewelry. These exquisite pieces, lost to the sea for centuries, shimmer with the brilliance of a forgotten era, their beauty untouched by time. Each item tells a tale of its own—of royalty, ambition, and adventure—brought back to life from the watery abyss.</p>
+            </div>
+        </section>
+
+        <section id="aquamarine" class="gem-section" aria-labelledby="aquamarine-heading">
+            <img src="imagine/aquamarine.jpg" alt="Natural sea-polished aquamarine" class="gem-image">
+            <div class="gem-description">
+                <h2 id="aquamarine-heading">Aquamarine</h2>
+                <p>An aquamarine mirrors the sea’s tranquility, its luster born from oceanic currents. Hand-faceted in antiquity, this pure, conflict-free gem evokes serene elegance.</p>
+            </div>
+        </section>
+
+        <section id="rubellite" class="gem-section" aria-labelledby="rubellite-heading">
+            <img src="imagine/rubellite.jpg" alt="Natural sea-polished rubellite" class="gem-image">
+            <div class="gem-description">
+                <h2 id="rubellite-heading">Rubellite</h2>
+                <p>A rubellite blazes with vivid red, smoothed by the sea’s rhythm. Its ancient cut and natural purity make this conflict-free gem a beacon of passion and power.</p>
+            </div>
+        </section>
+
+        <section id="golden-beryl" class="gem-section" aria-labelledby="golden-beryl-heading">
+            <img src="imagine/golden-beryl.jpg" alt="Natural sea-polished golden beryl" class="gem-image">
+            <div class="gem-description">
+                <h2 id="golden-beryl-heading">Golden Beryl</h2>
+                <p>Golden beryl sparkles with warm light, its sea-polished facets a gift of nature. Conflict-free and untouched by radiation, it radiates timeless luxury.</p>
+            </div>
+        </section>
+
+        <section id="gold-in-quartz" class="gem-section" aria-labelledby="gold-in-quartz-heading">
+            <img src="imagine/gold-in-quartz.jpg" alt="Natural gold in quartz" class="gem-image">
+            <div class="gem-description">
+                <h2 id="gold-in-quartz-heading">Gold in Quartz</h2>
+                <p>Gold veins dance through quartz, polished by the sea into a glassy marvel. This natural, conflict-free treasure fuses earth’s riches with oceanic refinement.</p>
+            </div>
+        </section>
+
+        <section id="pearls" class="gem-section" aria-labelledby="pearls-heading">
+            <img src="imagine/pearls.jpg" alt="Natural South Sea pearl" class="gem-image">
+            <div class="gem-description">
+                <h2 id="pearls-heading">Pearls</h2>
+                <p>South Sea pearls glow with golden luster, nurtured by the ocean’s depths. Naturally large and conflict-free, they embody the sea’s eternal grace.</p>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial">
+                <p>"Royal Gems provided me with a stunning ruby that feels like it has a story to tell. Truly a treasure!"</p>
+                <cite>— Jane D.</cite>
+            </div>
+            <div class="testimonial">
+                <p>"The emerald I purchased is beyond beautiful. It's clear that these gems are handled with care and reverence."</p>
+                <cite>— Mark S.</cite>
+            </div>
+        </section>
+
+        <section id="newsletter" class="newsletter">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter for the latest finds and stories.</p>
+            <form action="#" method="post">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
     </main>
 
     <footer role="contentinfo">
@@ -92,7 +172,7 @@
         const totalSlides = slides.length;
         const indicatorsContainer = document.querySelector('.indicators');
 
-        // Create indicators dynamically
+        // Create indicators
         slides.forEach((_, index) => {
             const indicator = document.createElement('span');
             indicator.classList.add('indicator');
@@ -118,7 +198,7 @@
         // Auto-scroll every 5 seconds
         setInterval(() => showSlide(currentSlide + 1), 5000);
 
-        // Smooth scrolling for navigation links
+        // Smooth scrolling for navigation
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -126,6 +206,26 @@
                     behavior: 'smooth'
                 });
             });
+        });
+
+        // Video Controls
+        const video = document.querySelector('.styled-video');
+        const playPauseBtn = document.querySelector('.play-pause');
+        const muteUnmuteBtn = document.querySelector('.mute-unmute');
+
+        playPauseBtn.addEventListener('click', () => {
+            if (video.paused) {
+                video.play();
+                playPauseBtn.textContent = 'Pause';
+            } else {
+                video.pause();
+                playPauseBtn.textContent = 'Play';
+            }
+        });
+
+        muteUnmuteBtn.addEventListener('click', () => {
+            video.muted = !video.muted;
+            muteUnmuteBtn.textContent = video.muted ? 'Unmute' : 'Mute';
         });
     </script>
 </body>
