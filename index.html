@@ -13,32 +13,17 @@
 <body>
     <header class="hero" role="banner">
         <div class="logo-space">
-            <img src="ROYAL LOGOS/ROYAL LOGO.png" alt="Royal Gems Logo" class="logo">
+            <²            <img src="ROYAL LOGOS/ROYAL LOGO.png" alt="Royal Gems Logo" class="logo">
         </div>
         <div class="carousel">
             <div class="slides">
                 <div class="slide" style="background-image: url('imagine/slide1.jpg')"></div>
                 <div class="slide" style="background-image: url('imagine/slide2.jpg')"></div>
                 <div class="slide" style="background-image: url('imagine/slide3.jpg')"></div>
-                <div class="slide" style="background-image: url('imagine/slide4.jpg')"></div>
-                <div class="slide" style="background-image: url('imagine/slide5.jpg')"></div>
-                <div class="slide" style="background-image: url('imagine/slide6.jpg')"></div>
-                <div class="slide" style="background-image: url('imagine/slide7.jpg')"></div>
             </div>
             <button class="prev" aria-label="Previous Slide">❮</button>
             <button class="next" aria-label="Next Slide">❯</button>
             <div class="indicators"></div>
-        </div>
-        <!-- Video Section Added Below Carousel -->
-        <div class="video-container">
-            <video loop muted playsinline class="styled-video" aria-label="Royal Gems Promotional Video">
-                <source src="VIDEO/royalvideo.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <div class="video-controls">
-                <button class="play-pause" aria-label="Play or Pause Video">Play</button>
-                <button class="mute-unmute" aria-label="Mute or Unmute Video">Mute</button>
-            </div>
         </div>
         <div class="hero-content">
             <p class="hero-text">Discover the finest natural gems and treasures reclaimed from the sea.</p>
@@ -58,8 +43,8 @@
         <ul>
             <li><a href="#about" aria-label="About Us">About Us</a></li>
             <li><a href="#rubies" aria-label="Rubies">Rubies</a></li>
-            <li><a href="#emeralds" aria-label="Rubies">Emeralds</a></li>
-            <li><a href="#jewels" aria-label="Jewels">Jewels</a></li>
+            <li><a href="#emeralds" aria-label="Emeralds">Emeralds</a></li>
+            <li><a href="#jewels" aria-label="Jewels">Sapphires</a></li>
             <li><a href="#aquamarine" aria-label="Aquamarine">Aquamarine</a></li>
             <li><a href="#rubellite" aria-label="Rubellite">Rubellite</a></li>
             <li><a href="#golden-beryl" aria-label="Golden Beryl">Golden Beryl</a></li>
@@ -206,26 +191,6 @@
                     behavior: 'smooth'
                 });
             });
-        });
-
-        // Video Controls
-        const video = document.querySelector('.styled-video');
-        const playPauseBtn = document.querySelector('.play-pause');
-        const muteUnmuteBtn = document.querySelector('.mute-unmute');
-
-        playPauseBtn.addEventListener('click', () => {
-            if (video.paused) {
-                video.play();
-                playPauseBtn.textContent = 'Pause';
-            } else {
-                video.pause();
-                playPauseBtn.textContent = 'Play';
-            }
-        });
-
-        muteUnmuteBtn.addEventListener('click', () => {
-            video.muted = !video.muted;
-            muteUnmuteBtn.textContent = video.muted ? 'Unmute' : 'Mute';
         });
     </script>
 </body>
